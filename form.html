@@ -22,58 +22,52 @@
       </nav>
     </header>
     <main class="page-form">
-      <section class="top-content">
-        <header class="content-header">
-          <h1 class="content-header__title">Вязание на заказ</h1>
-        </header>
-        <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      </section>
-      <section class="fotms-content">
-        <form class="choice" method="post" action="#">
-          <h3 class="title-h3">Тип</h3>
-          <input class="choice__toy" type="radio" name="type" value="Аксессуар для интерьера" id="one" checked>
+      <header class="content-header">
+        <h1 class="content-header__title">Вязание на заказ</h1>
+      </header>
+      <p class="page-form__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class=" forms-content" method="post" action="#">
+          <h3 class="title-labels">Тип</h3>
+          <input class=" forms-content__toy" type="radio" name="type" value="Аксессуар для интерьера" id="one" checked>
           <label for="one">Аксессуар для интерьера</label>
-          <input class="choice__toy" type="radio" name="type" value="Детская игрушка" id="two">
+          <input class=" forms-content__toy" type="radio" name="type" value="Детская игрушка" id="two">
           <label for="two">Детская игрушка</label>
-          <h3 class="title-h3">Цвет</h3>
-          <input class="choice__color" type="checkbox" id="white" checked>
+          <h3 class="title-labels">Цвет</h3>
+          <input class=" forms-content__color" type="checkbox" id="white" checked>
           <label for="white">Белый</label>
-          <input class="choice__color" type="checkbox" id="grey" checked>
-          <label for="white">Серый</label>
-          <input class="choice__color" type="checkbox" id="tifan" >
-          <label for="white">«Тиффани»</label>
-          <input class="choice__color" type="checkbox" id="black" >
-          <label for="white">Черный</label>
-          <input class="choice__color" type="checkbox" id="pink" >
-          <label for="white">Розовый</label>
-          <input class="choice__color" type="checkbox" id="orange" >
-          <label for="white">Оранжевый</label>
-          <h3 class="title-h3">ФИО</h3>
-          <input class="choice__full-name" type="text" placeholder="Введитеваше имя*" id="name">
+          <input class=" forms-content__color" type="checkbox" id="grey" checked>
+          <label for="grey">Серый</label>
+          <input class=" forms-content__color" type="checkbox" id="tifan" >
+          <label for="tifan">«Тиффани»</label>
+          <input class=" forms-content__color" type="checkbox" id="black" >
+          <label for="black">Черный</label>
+          <input class=" forms-content__color" type="checkbox" id="pink" >
+          <label for="pink">Розовый</label>
+          <input class=" forms-content__color" type="checkbox" id="orange" >
+          <label for="orange">Оранжевый</label>
+          <h3 class="title-labels">ФИО</h3>
+          <input class=" forms-content__full-name" type="text" placeholder="Введитеваше имя*" id="name">
           <label for="name">Имя:</label>
-          <input class="choice__full-name" type="text" placeholder="Укажите фамилию*" id="sec-name">
+          <input class=" forms-content__full-name" type="text" placeholder="Укажите фамилию*" id="sec-name">
           <label for="sec-name">Фамилия:</label>
-          <input class="choice__full-name" type="text" placeholder="Отчество, если желаете*" id="th-name">
+          <input class=" forms-content__full-name" type="text" placeholder="Отчество, если желаете*" id="th-name">
           <label for="th-name">Отчество:</label>
-          <h3 class="title-h3">Тел</h3>
-          <input class="choice__contacts" type="tel" name="tel" pattern="+7[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*">
+          <h3 class="title-labels">Тел</h3>
+          <input class=" forms-content__contacts" type="tel" name="tel" pattern="+7[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*">
           <h3 class="title-h3">E-mail</h3>
           <input class="choice__contacts" type="email" placeholder="Ваш Email*">
-          <h3 class="title-h3">Доп</h3>
-          <textarea class="choice__comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <h3 class="title-labels">Доп</h3>
+          <textarea class=" forms-content__comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           <p>*Поля обязательны для заполнения</p>
           <button class="btn">Отправить заказ</button>
         </form>
-      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__social">
-          <span class="social-links">
+        <div class="page-footer__social social-links">
             <a class="social-link social-link--inst" href="">Мы в Инстаграме</a>
             <a class="social-link social-link--fb" href="">Мы в Фейсбуке</a>
             <a class="social-link social-link--tw" href="">Мы в Твитере</a>
-          </span>
         </div>
         <p class="page-footer__copyright">
           Разработано
