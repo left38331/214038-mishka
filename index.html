@@ -5,34 +5,32 @@
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="b-page">
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="img/logo.svg" width="86" height="35" alt="Мишка">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
       </div>
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item search"><a href="">Поиск по сайту</a></li>
-          <li class="main-nav__item basket"><a href="">Корзина: пока пуста</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item search"><a class="main-nav__link" href="">Поиск по сайту</a></li>
+          <li class="main-nav__item basket"><a class="main-nav__link" href="">Корзина: пока пуста</a></li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <section class="slogan">
-        <header class="slogan__header">
-          <h1 class="slogan__title">Милые штуки<br> ручной<br> работы для дома</h1>
-        </header>
-        <div class="content-btn">
-          <a class="content-btn__link content-btn__link--one" href="">Предметы интерьера</a>
-          <a class="content-btn__link content-btn__link--two" href="">Детские игрушки</a>
-        </div>
-      </section>
-      <section class="product">
-        <h2 class="title-h2">Вязаные корзинки</h2>
-        <h3 class="title-action title-action--color">Товар недели</h3>
+      <header class="slogan-header page-main__header">
+        <h1 class="slogan-header__title">Милые штуки<br> ручной<br> работы для дома</h1>
+      </header>
+      <div class="content-btn page-main__btn">
+        <a class="content-btn__link content-btn__link--one" href="">Предметы<br> интерьера</a>
+        <a class="content-btn__link content-btn__link--two" href="">Детские <br> игрушки</a>
+      </div>
+      <section class="product page-main__product">
+        <h2 class="title-h2 product__title-h2">Вязаные корзинки</h2>
+        <h3 class="product__action product__action--color">Товар недели</h3>
         <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="product__table product__table--border">
           <tr>
@@ -48,11 +46,11 @@
             <td>15 см</td>
           </tr>
         </table>
-        <img src="#" width="260" height="315" alt="Корзина">
+        <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Корзина">
         <p class="product__price product__price--center">Цена: 990 руб</p>
         <a class="btn product__buy" href="">Заказать</a>
       </section>
-      <section class="about-us">
+      <section class="about-us page-main__about-us">
         <h2 class="title-h2">Коротко о нас</h2>
         <ul class="about-us__list">
           <li class="about-us__item about-us__item--eco">
@@ -75,26 +73,30 @@
           </li>
         </ul>
       </section>
-      <section class="reviews">
+      <section class="reviews page-main__reviews">
         <h2 class="title-h2">Отзывы</h2>
         <div class="rewiews__wrapper slider">
-          <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="rewiews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <cite class="reviews__auhor-name">Анастасия Красильникова<br><span>@misssssiskras</span></cite>
         </div>
-        <div class="reviews__btn">
+        <div class="reviews__btns">
           <button class="reviews__prev" type="button">Предыдущий отзыв</button>
           <button class="reviews__next" type="button">Следующий отзыв</button>
         </div>
-        <a class="reviews__write btn" href="">Написать</a>
+        <a class="btn reviews__btn" href="">Написать</a>
       </section>
-      <section class="contacts">
-        <h2 class="title-h2">Контакты</h2>
-        <p class="contacts__content">
-        e-mail <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a><br>
-        адрес г. Санкт-Петербург<br>ул. Большая<br>Конюшенная,<br> д.19/8, офис 101
-        </p>
-        <map class="contacts__map"></map>
-        <a class="contacts__write btn" href="">Напишите нам</a>
+      <section class="contacts page-main__contacts">
+        <h2 class="title-h2 contacts__title">Контакты</h2>
+        <pre class="contacts__content">
+e-mail:   <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+
+адрес:    г.Санкт-Петербург
+          ул.Большая
+          Конюшенная,
+          д.19/8,офис 101
+        </pre>
+        <img class="contacts__map" src="img/map-mobile@1x.jpg" width="320" height="457" alt="карта">
+        <a class="btn contacts__btn" href="">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
@@ -106,7 +108,7 @@
         </div>
         <p class="page-footer__copyright">
           Разработано
-          <a class="btn page-footer__copyright-link" href="">Html Academy</a>
+          <a class="btn-academy page-footer__copyright-link" href="">Html Academy</a>
         </p>
       </div>
     </footer>
