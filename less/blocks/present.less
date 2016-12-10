@@ -1,0 +1,36 @@
+.present {
+  margin-bottom: 30px;
+
+  .present__border {
+    margin-top: -6px;
+    padding-left: 30px;
+    border: 1px solid #ededed;
+  }
+  
+  .present__name-toy {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 7px;
+  }
+
+  .present__price {
+    position: relative;
+    display: block;
+    margin-top: 45px;
+    padding-bottom: 26px;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 700;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: -22px;
+      left: 0;
+      width: 204px;
+      height: 1px;
+      background-color: #ececec;
+    }
+  }
+
+}

@@ -1,0 +1,47 @@
+
+.container() {
+  width: 260px;
+  padding: 0 30px;
+
+  @media @tablet-widths {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  @media @desktop-widths {
+    width: 1050px;
+    padding: 0 50px;
+  }
+}
+
+.h1() {
+  font-size: 27px;
+  line-height: 30px;
+  color: #010000;
+  font-weight: 700;
+  
+  @media @tablet-widths {
+    font-size: 43px;
+    line-height: 50px;
+    color: #000;
+    font-weight: 700;
+  }
+  
+  @media @desktop-widths {
+    font-size: 53px;
+    line-height: 57px;
+    color: #000;
+    font-weight: 700;
+  }
+}
+
+.container-fluid() {
+  width: auto;
+
+  @media @tablet-widths {
+    width: 86%;        /* 640px / 768px ~= 84% */
+    max-width: 1150px;  /* 960px / .84 ~= 1142px (центровка начнётся чуть раньше 1200px) */ 
+    margin: 0 auto;
+  }
+
+}

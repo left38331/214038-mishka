@@ -1,0 +1,35 @@
+.page-footer {
+  .container();
+  padding-top: 24px;
+  background: #f1f1f1;
+  min-height: 145px;
+  
+  .page-footer__logo{
+    display: none;
+  }
+  .page-footer__social {
+    
+  }
+
+  .page-footer__copyright {
+    font-size: 19px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 18px;
+  }
+}
+
+@media @tablet-widths {
+  .page-footer {
+    display: flex;
+    
+    .page-footer__logo{
+      display: block;
+      margin-right: 80px;
+  }
+    
+    .page-footer__copyright {
+      margin-left: auto;
+    }
+  }
+}

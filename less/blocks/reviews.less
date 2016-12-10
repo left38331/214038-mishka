@@ -1,0 +1,104 @@
+.reviews {
+  .container();
+
+  padding-bottom: 50px;
+
+  .rewiews__text {
+    display: block;
+    line-height: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .reviews__auhor-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    font-style: normal;
+  }
+  
+  .reviews__item-auhor-email {
+    font-weight: normal;
+    color: #444444;
+    text-decoration: none;
+  }
+  
+  .rewiews__wrapper{
+    z-index: 10;
+  }
+  
+  .reviews__nav {
+    display: flex;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    font-size: 0;
+  }
+  
+  .reviews__nav-item {
+     width: 50%;
+    height: 50px;
+    border: 1px solid #ececec
+  }
+  
+  .rewiews__bg {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+  .reviews {
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .reviews__header {
+      order: -1;
+      z-index: 10;
+    }
+  
+    .reviews__btn {
+      order: -1;
+      min-width: 171px;
+      margin-left: auto;
+      line-height: 24px;
+    }
+  
+    .rewiews__text {
+      z-index: 10;
+      margin-top: 45px;
+      margin-bottom: 55px;
+    }
+    
+    .reviews__nav {
+      width: 180px;
+      margin: 0;
+      margin-left: auto;
+    }
+    
+    .rewiews__bg {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  }
+}
+
+@media @desktop-widths  {
+  .reviews {
+    .reviews__header {
+      margin-left: 175px;
+    }
+
+    .rewiews__text {
+      margin-left: 175px;
+      width: 780px;
+    }
+    
+    .rewiews__wrapper {
+      margin-left: 175px;
+    }
+  }
+}
