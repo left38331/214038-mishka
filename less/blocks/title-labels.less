@@ -1,0 +1,28 @@
+.title-labels {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63d1bb;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 61px;
+    width: 199px;
+    height: 1px;
+    background-color: #63d1bb;
+  }
+}
+
+@media @tablet-widths {
+  .title-labels {
+
+    &:before {
+      display: none;
+    }
+  }
+}

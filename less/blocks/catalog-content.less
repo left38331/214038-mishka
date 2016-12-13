@@ -1,0 +1,46 @@
+.catalog-content {
+  p {
+    font-size: 13px;
+  }
+
+  .catalog-content__list {
+    list-style: none;
+    .container();
+    margin-top: 30px;
+  }
+
+  .catalog-content__video {
+    .container();
+    margin-bottom: 58px;
+  }
+}
+
+@media @tablet-widths {
+  .catalog-content {
+    .catalog-content__list {
+      margin-top: 82px;
+    }
+
+    .catalog-content__video {
+      margin-bottom: 63px;
+    }
+  }
+}
+
+@media @desktop-widths  {
+  .catalog-content {
+    p {
+      font-size: 15px;
+    }
+
+    .catalog-content__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 131px;
+    }
+
+    .catalog-content__video {
+
+    }
+}
+}
