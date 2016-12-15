@@ -38,25 +38,27 @@
         cursor: pointer;
       }
 
-      &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 12px;
-        width: 17px;
-        height: 17px;
-        background: #63d1bb;
-        border-radius: 50%;
-      }
+
 
       &:hover::before {
-	    border-color:#63d1bb;
+        border-color:#63d1bb;
       }
 
       &:active::before {
         border-color:rgba(0,0,0,.3)
       }
+    }
+
+    .forms-content__toy:checked +.forms-content__label::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 12px;
+      width: 17px;
+      height: 17px;
+      background: #63d1bb;
+      border-radius: 50%;
     }
   }
 
@@ -68,8 +70,6 @@
     .forms-content__position-form-two {
       margin-top: 20px;
     }
-
-
 
     .forms-content__label {
       position: relative;
@@ -89,6 +89,25 @@
         border:2px solid #000;
         cursor:pointer
       }
+
+      &:hover::before {
+        border-color: #63d1bb;
+      }
+
+      &:active::before {
+        border-color:rgba(0,0,0,.3)
+      }
+    }
+
+    .forms-content__check:checked + .forms-content__label::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 7px;
+      width: 30px;
+      height: 18px;
+      background: #000 url(../img/icon-tick.svg) no-repeat;
     }
 
     .forms-content__label--first {
@@ -113,10 +132,22 @@
       margin-bottom: 22px;
       padding-top: 20px;
       padding-bottom: 15px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 17px;
+      font-weight: 700;
       font-weight: 400;
       outline: none;
       border: none;
       border-bottom: 2px solid #000;
+      .placeholder();
+
+      &:hover {
+        border-color: #62d1ba;
+      }
+
+      &:focus {
+        border-color: #62d1ba;
+      }
     }
   }
 
@@ -129,10 +160,21 @@
       margin-bottom: 22px;
       padding-top: 20px;
       padding-bottom: 15px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 17px;
       font-weight: 400;
       outline: none;
       border: none;
       border-bottom: 2px solid #000;
+      .placeholder();
+
+      &:hover {
+        border-color: #62d1ba;
+      }
+
+      &:focus {
+        border-color: #62d1ba;
+      }
     }
 
     .forms-content__contacts-input--textarea {
@@ -169,7 +211,6 @@
   }
 
   .forms-content__btn {
-    background-color: #ffffff;
     width: 100%;
     margin-top: 26px;
   }
