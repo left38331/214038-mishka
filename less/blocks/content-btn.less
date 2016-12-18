@@ -4,6 +4,7 @@
   line-height: 24px;
 
   .content-btn__link {
+    position: relative;
     display: block;
     width: 100%;
     padding: 27px 30px 28px;
@@ -19,6 +20,22 @@
     }
   }
 
+  .content-btn__link:hover .content-btn__link-one-image path {
+    fill: #29a592;
+  }
+
+  .content-btn__link:active .content-btn__link-one-image path {
+    fill: #44c0aa;
+  }
+
+  .content-btn__link:hover .content-btn__link-two-image path {
+    fill: #29a592;
+  }
+
+  .content-btn__link:active .content-btn__link-two-image path {
+    fill: #44c0aa;
+  }
+
   .content-btn__link--one {
     box-sizing: border-box;
     background: #63d1bb;
@@ -28,6 +45,15 @@
     }
   }
 
+  .content-btn__link-one-image {
+    position: absolute;
+    content: "";
+    top:23px;
+    right: 36px;
+    height: 62px;
+    width: 41px;
+  }
+
   .content-btn__link--two {
     box-sizing: border-box;
     background: #56c3b2;
@@ -35,6 +61,15 @@
     &:hover {
       box-shadow:0 5px 0 0 #56c3b2;
     }
+  }
+
+  .content-btn__link-two-image {
+    position: absolute;
+    content: "";
+    top:20px;
+    right: 26px;
+    height: 61px;
+    width: 61px;
   }
 }
 
@@ -49,6 +84,15 @@
       font-size: 20px;
       line-height: 30px;
       font-weight: 700;
+    }
+
+    .content-btn__link-one-image {
+      top:30px;
+    }
+
+    .content-btn__link-two-image {
+      top:31px;
+      right: 33px;
     }
   }
 }

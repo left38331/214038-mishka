@@ -68,8 +68,19 @@
 
 @media @tablet-widths {
   .contacts {
+    position: relative;
     display: flex;
     flex-direction: column;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -13px;
+      right: 53px;
+      width: 47px;
+      height: 81px;
+      background: url(../../img/icon-flag.svg) center no-repeat;
+    }
 
     .contacts__info {
       display: flex;
@@ -104,6 +115,16 @@
   .contacts {
     position: relative;
     flex-wrap: wrap;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 113px;
+      width: 47px;
+      height: 81px;
+      background: url(../../img/icon-flag.svg) center no-repeat;
+    }
 
     .contacts__title {
       padding-top: 70px;

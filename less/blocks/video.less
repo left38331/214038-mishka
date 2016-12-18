@@ -1,4 +1,12 @@
 .video {
+  position: relative;
+
+  .video__image {
+    position: absolute;
+    top: 30px;
+    left: 64px;
+  }
+
   .video__title {
     padding-top: 22px;
     padding-bottom: 25px;
@@ -33,6 +41,10 @@
     display: flex;
     flex-direction: column;
 
+    .video__image {
+      top: 453px;
+      left: 92px;
+    }
 
     .video__title {
       order: -1;
@@ -67,10 +79,15 @@
     position: relative;
     align-items: flex-end;
 
+    .video__image {
+      top: 46px;
+      left: 760px;
+    }
+
     .video-main {
       position: absolute;
       top: 0;
-      left: 50px;
+      left: 0;
       width: 682px;
       height: 455px;
       background-color: bisque;
@@ -92,9 +109,9 @@
     .video__content {
       width: 230px;
       border-left: 0;
-      margin-right: 25px;
       padding-left: 80px;
       padding-bottom: 59px;
+      padding-right: 58px;
     }
 
     .video__btn {
