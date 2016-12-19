@@ -1,4 +1,5 @@
 .catalog-content {
+
   p {
     font-size: 13px;
   }
@@ -29,6 +30,10 @@
 
 @media @desktop-widths  {
   .catalog-content {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0;
+
     p {
       font-size: 15px;
     }
@@ -38,5 +43,20 @@
       flex-wrap: wrap;
       margin-top: 131px;
     }
+
+    .catalog-content__video {
+      padding: 0;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    .catalog-content__video:hover {
+      box-shadow: 0 6px 10px 0 rgba(0,0,0, 0.1);
+    }
+
+    .catalog-content__video:active {
+      box-shadow: 0 3px 5px 0 rgba(0,0,0, 0.1);
+    }
+
   }
 }

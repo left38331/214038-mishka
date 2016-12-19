@@ -5,6 +5,7 @@
 
   .user-nav__link {
     display: block;
+    position: relative;
     text-align: left;
     padding: 26px 0 28px 76px;
     border-bottom: 1px solid #ececec;
@@ -13,10 +14,18 @@
     line-height: 24px;
     text-decoration: none;
     color: #000000;
-    }
+
+
+  }
 
   .user-nav__item:last-child {
     position: relative;
+  }
+
+  .user-nav__link-image {
+    position: absolute;
+    top: 30px;
+    left: 30px;
   }
 }
 
@@ -38,6 +47,14 @@
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
+}
+
+.user-nav__user-item:hover .user-nav__link-image path {
+  fill: #63d1bb;
+}
+
+.user-nav__user-item:active .user-nav__link-image path {
+  fill: rgba(99, 209, 187, 0.3);
 }
 
 @media @mobile-widths-only {
@@ -74,15 +91,21 @@
       border-bottom: 0;
     }
 
-    .user-nav__link-search {
+    .user-nav__link--search {
       font-size: 0;
       padding: 32px 0 34px 84px;
       border-left: 1px solid #ececec;
     }
 
-    .user-nav__link-basket {
+    .user-nav__link--basket {
       padding: 32px 0 34px 84px;
       border-left: 1px solid #ececec;
     }
+
+    .user-nav__link-image {
+    position: absolute;
+    top: 35px;
+    left: 32px;
+  }
   }
 }
