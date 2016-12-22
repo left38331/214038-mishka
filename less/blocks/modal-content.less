@@ -6,13 +6,12 @@
   left:50%;
   margin-left: -160px;
   width: 260px;
-  padding: 0 30px; 
+  padding: 0 30px;
   border-top: 1px solid #c7c7c7;
   text-align: center;
   padding-bottom: 46px;
   box-shadow: 0  5px 5px -5px rgba(0, 0, 0, 0.25);
   background: #fff;
-  
   .modal-content__title {
     font-size: 25px;
     color: #000000;
@@ -22,19 +21,15 @@
     margin-bottom: 14px;
     padding-top: 30px;
   }
-  
   .modal-text {
     margin-bottom: 40px;
   }
-  
   .modal-content__form {
     font-size: 0;
   }
-  
   .modal-content__input {
     display: none;
   }
-  
   .modal-content__label {
     position: relative;
     display: inline-block;
@@ -47,7 +42,6 @@
     color: #000;
     text-transform: uppercase;
     font-weight: 700;
-    
     &::before {
       content: "";
       position: absolute;
@@ -60,24 +54,19 @@
       border: 2px solid #ececec;
       cursor: pointer;
     }
-    
     &:hover::before {
       border: 2px solid #c7c7c7;
     }
-    
     &:active::before {
       border: 2px solid #62d1ba;
     }
   }
-  
   .modal-content__input:checked +.modal-content__label::before {
     border: 2px solid #62d1ba;
   }
-  
   .modal-content__label:last-child {
     margin-right: 0;
   }
-  
   .modal-content__btn {
     width: 100%;
     line-height: 16px;
@@ -97,7 +86,6 @@
 }
 
 @media @tablet-widths {
-  
   .modal-content {
     width: 566px;
     padding-left: 0;
@@ -106,34 +94,28 @@
     margin-left: -284px;
     border: 1px solid #c7c7c7;
     box-shadow: 0  5px 10px 0 rgba(0, 0, 0, 0.25);
-    
     .modal-content__title {
       font-size: 30px;
       line-height: 57px;
       margin-bottom: 14px;
       padding-top: 30px;
     }
-    
     .modal-content__title br {
       display: none;
     }
-    
     .modal-text {
       font-size: 17px;
       margin-bottom: 35px;
     }
-    
     .modal-content__label {
       width: 112px;
       height: 52px;
       margin-right: 7px;
-    
       &::before {
         width: 112px;
         height: 52px;
       }
     }
-    
     .modal-content__label:first-child {
       margin-left: -40px;
     }
